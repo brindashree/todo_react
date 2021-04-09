@@ -1,0 +1,6 @@
+.tile {
+  display: flex;
+  background-color: #c7d2fe;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
