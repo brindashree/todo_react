@@ -36,16 +36,34 @@ function App() {
 
   return (
     <div className="App"
+      style={
+        {
+          
+          width: "100%",
+         
+          
+        }
+      }
      >
       <div
         style={{
+    
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        
           alignItems: "center",
-        width:"100%",
+          width: "900px",
+          
+          height: "auto",
+        
+    margin: "auto",
+          backgroundColor: "#312E81",
+           borderRadius:"2rem",
+       
       }}>
-      <h1> TODO APP</h1>
+        <h1 style={{
+        color:"#EEF2FF",
+      }}> TODO APP</h1>
         <form>
           <TextField id="outlined-basic" label="Write a TODO" variant="outlined"
           value={todoInput}
@@ -54,10 +72,15 @@ function App() {
             
           }}
           style={{
-          width:"90vw", maxWidth:"500px"
+            width: "90vw", maxWidth: "500px",
+            backgroundColor: "#FFFBEB",
+            color:"black"
+            
           }} />
           <Button type="submit" variant="contained" color="primary" onClick={addTodo}
             style={{
+           
+              
             display:"none"
           }}>
   Primary
